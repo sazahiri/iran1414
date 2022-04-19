@@ -1,0 +1,135 @@
+body {
+  background: #060e1b;
+  overflow: hidden;
+}
+#canvas{	
+position: absolute;
+
+}
+svg{
+margin: auto;
+width: 100%;
+	position: absolute;
+	opacity: 0.75;
+}
+.titlelayer{
+	background-color: #fff;
+	font-family: 'raja';
+	padding: 5px;
+	margin: 5px ;
+
+	text-align: center;
+	border-radius: 5px;
+	color: #181818;
+}
+.message .titlelayer{
+	
+	float: right;
+}
+.titlelayer:hover{
+  background-color: #ED6501 !important;
+        cursor: pointer;}
+svg g text:hover{ 
+      fill: #a98829 !important;
+	  stroke:"black" ;stroke-width:"20";
+        cursor: pointer;
+	}
+svg  line:hover{ 	  stroke: #a98829 !important;
+stroke-width:"20";
+        cursor: pointer;
+
+}
+
+.message {
+	padding-right:120px;
+float: right;
+background:#181818;
+color:#FFF;
+position: absolute;
+top: -50px;
+left: 0;
+color: #fff;
+width: 100%;
+height: 50px;
+transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+overflow: hidden;
+box-sizing: border-box;
+direction: rtl;
+  
+}
+.message_right {
+background:#181818;
+color:#FFF;
+padding: 65px 15px 0 0;
+position: absolute;
+right: -100px;
+top: 0;
+height: 100%;
+width: 100px;
+transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+overflow: hidden;
+box-sizing: border-box;
+direction: rtl;
+color: #fff;
+
+  
+}
+.title{
+	color: #fff;
+	direction: rtl;
+}
+
+.message h1 {
+  color:#FFF;
+}
+
+#toggle {
+  position:absolute;
+  appearance:none;
+  cursor:pointer;
+  left:-100%;
+  top:-100%;
+
+}
+
+#toggle + label {
+right: 0;
+z-index: 99;
+  position:absolute;
+  cursor:pointer;
+  background: #26ae90;
+width: 20px;
+border-radius: 3px;
+color: #FFF;
+line-height:20px;
+font-size:12px;
+text-align:center;
+-webkit-font-smoothing: antialiased;
+cursor: pointer;
+  transition:all 500ms ease;
+}
+#toggle + label:after {
+  content:"+" 
+}
+
+.container {
+transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+
+}
+
+#toggle:checked ~ .message {
+  top: 0;
+}
+#toggle:checked ~ .message_right {
+  right: 0;
+}
+#toggle:checked ~ .container {
+}
+
+#toggle:checked + label {
+  background:#dd6149;
+}
+
+#toggle:checked + label:after {
+  content:"-"
+}

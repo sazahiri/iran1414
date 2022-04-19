@@ -1,0 +1,47 @@
+
+@font-face{
+	font-family:'raja';
+	src:url(../fonts/raja/raja.woff);
+}
+@font-face{
+	font-family:'raja_nazanin';
+	src:url(../fonts/raja/raja_nazanin.ttf) format('truetype');
+}
+@font-face{
+	font-family:'iransans';
+	src:url(../fonts/raja/rajaz-webfont.eot?#) format('eot'),
+		url(../fonts/raja/rajaz-webfont.woff) format('woff'),
+		url(../fonts/raja/rajaz-webfont.ttf) format('truetype');
+}
+@font-face{
+	font-family:"mitra";
+	font-style:normal;
+	font-weight:normal;
+	src:local("???"),url(../fonts/raja/nassim-regular.woff) format("woff"),
+	url(../fonts/raja/nassim-regular.ttf) format("truetype");
+}
+@font-face{
+	font-family:"mitra";
+	font-style:normal;
+	font-weight:normal;
+	src:local("???"),url(../fonts/raja/nassim-regular.woff) format("woff"),
+	url(../fonts/raja/nassim-regular.ttf) format("truetype");
+}
+@font-face{
+	font-family:"mitra";
+	font-style:normal;
+	font-weight:bold;
+	src:local("???"),url(../fonts/raja/nassim-bold.woff) format("woff"),
+	url(../fonts/raja/nassim-bold.ttf) format("truetype");
+}
+@font-face {
+     font-family: 'titr';
+     src: url('../fonts/titr/BTitr.eot');
+     src: url('../fonts/titr/BTitr.otf') format('opentype');
+     local('B Titr'),
+     url('../fonts/titr/BTitr.woff') format('woff'),
+     url('../fonts/titr/BTitr.ttf') format('truetype'),
+     url('../fonts/titr/BTitr.svg') format('svg');
+font-weight: normal;
+font-style: normal;
+}
